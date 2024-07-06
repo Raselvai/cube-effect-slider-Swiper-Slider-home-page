@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Lato", sans-serif;
+	box-sizing: border-box;
+}
+
+button:focus, input:focus, textarea:focus {
+	outline: 0;
+}
+
+
+
+.home_wrapper {
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	position: relative;
+	background-image: radial-gradient(circle at 20% 100%,rgba(184, 184, 184, 0.1) 0%,rgba(184, 184, 184, 0.1) 33%,rgba(96, 96, 96, 0.1) 33%,rgba(96, 96, 96, 0.1) 66%,rgba(7, 7, 7, 0.1) 66%,rgba(7, 7, 7, 0.1) 99%),linear-gradient(40deg, #09203F, #537895, #202e64, #6f7aa6);
+}
+
+.home_wrapper #tsparticles {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+
+.home_wrapper .home_content h1 {
+	font-size: 50px;
+	font-weight: 700;
+	color: #ffffff;
+}
+
+.home_wrapper .home_content p {
+	font-size: 15px;
+	line-height: 26px;
+	color: #ffffff;
+	margin-top: 30px;
+}
+
+.home_wrapper .home_content a {
+	height: 45px;
+	border-radius: 6px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+	background: #ffffff;
+	color: #000000;
+	font-weight: 500;
+	padding: 0 15px;
+	transition: .3s;
+}
+
+.home_wrapper .home_content a:hover {
+	text-decoration: none;
+	background: #000000;
+	color: #ffffff;
+}
+
+.home_wrapper .home_item {
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	border-radius: 20px;
+	max-width: 400px;
+	margin: 0 auto;
+}
+
+.home_wrapper .home_item img {
+    border-radius: 20px 20px 0 0;
+    height: 315px;
+    object-fit: cover;
+}
+
+.home_wrapper .home_item .home_text {
+	background: rgba(93, 95, 145, 0.2);
+	backdrop-filter: blur(20px);
+	padding: 20px;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	border-radius: 0 0 20px 20px;
+}
+
+.home_wrapper .home_item .home_text h2 {
+    font-size: 25px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.home_wrapper .home_item .home_text p {
+	font-size: 14px;
+	line-height: 22px;
+	color: #ffffff;
+}
+
+.home_wrapper .home_item .home_text i {
+    color: #28ee12;
+}
+
+.home_wrapper .home_item .home_text span {
+	margin-left: 1rem;
+	color: #ffffff;
+	font-weight: 500;
+}
+
+@media (max-width: 768px) { 
+	.home_wrapper {
+		height: auto;
+		padding: 80px 0;
+	}
+
+	.home_wrapper .home_content {
+		margin-bottom: 60px;
+	}
+}
+
+@media (max-width: 576px) {
+	.home_wrapper .home_content h1 {
+	    font-size: 35px;
+	}
+
+	
+}
